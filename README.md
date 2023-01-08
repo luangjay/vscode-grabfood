@@ -1,6 +1,6 @@
-# vscode-grabfood README
+# GrabFood for VSCode
 
-Instantly order food from VSCode.
+Instantly order food from VSCode
 
 ## Usage
 
@@ -17,12 +17,16 @@ Order food, simple enough.
 
 ## Known Issues
 
-After installation, it may take a few minutes for the extension to activate. Please do not close the VSCode window until the activation finishes. If the extension does not work properly, reinstallation can resolve the issue.
+Once installed, it may take a few minutes for the extension to activate. Please do not close the VSCode window until the activation finishes. If the extension does not work properly, reinstallation can resolve the issue.
 
 ## Release Notes
 
 ### 1.0.0
 
 Initial release of vscode-grabfood
+
+## Special Thanks
+
+Thanks to my friend for the inspiration!
 
 **Enjoy!**
