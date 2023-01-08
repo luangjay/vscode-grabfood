@@ -15,6 +15,10 @@ Order food, simple enough.
 - VSCode version 1.74.0 or above (tested on Windows and WSL)
 - Node package manager (npm)
 
+## Known Issues
+
+After installation, it may take a few minutes for the extension to activate. Please do not close the VSCode window until the activation finishes. If the extension does not work properly, reinstallation can resolve the issue.
+
 ## Release Notes
 
 ### 1.0.0
