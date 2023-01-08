@@ -2,7 +2,7 @@
   "name": "vscode-grabfood",
   "displayName": "GrabFood for VSCode",
   "description": "Instantly order food from VSCode.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-grabfood.helloWorld"
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-grabfood.helloWorld",
-        "title": "Hello World"
+        "command": "vscode-grabfood.orderFood",
+        "title": "GrabFood: Order Food"
       }
     ]
   },
@@ -31,7 +31,7 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "start": "electron-forge start",
+    "start": "electron-forge start -p src/index.js",
     "make": "electron-forge make"
   },
   "devDependencies": {
