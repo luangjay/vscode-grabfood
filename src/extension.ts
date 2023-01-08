@@ -42,6 +42,12 @@ function cmdSync(command: string, args?: readonly string[]) {
     cwd: rootPath,
   })
   return new Promise((resolve) => {
+    startProcess.stdout.on('data', (data) => {
+      console.log(`${data}`)
+    })
+    startProcess.stderr.on('data', (data) => {
+      console.error(`${data}`)
+    })
     startProcess.on('exit', (code) => {
       resolve(code)
     })
